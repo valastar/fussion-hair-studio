@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+<!-- AGENT-MEMORY:BEGIN -->
+- Business data (services, branches, WhatsApp number) and the WhatsApp booking-link builder live in `src/lib/fussion.ts`; sections import from there so contact info has one source. Covered by `src/test/whatsapp-link.test.ts`.
+- Landing sections live in `src/components/site/*` and are composed in `src/routes/index.tsx` — single-page site with hash anchors.
+- Single dark theme only (no `.dark` block); all colors are tokens in `src/styles.css`.
+<!-- AGENT-MEMORY:END -->
