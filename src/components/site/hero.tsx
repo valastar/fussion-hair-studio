@@ -1,4 +1,4 @@
-import { ArrowDown, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import hero from "@/assets/hero-barberia.jpg";
 import { Button } from "@/components/ui/button";
 
@@ -22,7 +22,7 @@ export function Hero() {
             Peluquería especializada en caballeros
           </p>
           <h1 className="mt-6 text-6xl font-medium leading-[0.95] text-foreground sm:text-7xl md:text-8xl">
-            Corte de cabello <span className="italic text-gold">y barba</span>
+            Corte de cabello <span className="whitespace-nowrap italic text-gold">y barba</span>
           </h1>
           <p className="mt-6 max-w-md text-lg font-light leading-relaxed text-foreground/80">
             Tu lugar en Hermosillo para verte bien y salir renovado. Agenda en segundos por WhatsApp.
@@ -40,13 +40,6 @@ export function Hero() {
         </div>
       </div>
 
-      <a
-        href="#servicios"
-        aria-label="Ir a servicios"
-        className="absolute bottom-8 right-8 hidden items-center gap-3 text-xs uppercase tracking-[0.3em] text-foreground/60 transition-colors hover:text-primary md:flex"
-      >
-        Descubre <ArrowDown className="size-4 animate-bounce" />
-      </a>
     </section>
   );
 }
