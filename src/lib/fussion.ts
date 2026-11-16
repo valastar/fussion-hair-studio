@@ -37,9 +37,9 @@ export function directionsUrl(address: string) {
 
 /** Builds the WhatsApp booking link with the client's choices pre-written in the message. */
 export function buildWhatsAppLink(opts: {
-  services?: ServiceId[];
-  branch?: BranchId;
-  name?: string;
+  services?: ServiceId[] | undefined;
+  branch?: BranchId | undefined;
+  name?: string | undefined;
 } = {}) {
   const lines = ["Hola Fussion, me gustaría agendar una cita."];
   const services = (opts.services ?? [])
